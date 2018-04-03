@@ -44,8 +44,8 @@
         const repContainer = document.getElementById('rep-container');
         repContainer.innerHTML = '';
 
-        const list = createAndAppend('div', repContainer, { id: 'list-container' });
-        const ul = createAndAppend('ul', list, { html: '<strong> Repository information: </strong>' });
+      //  const list = createAndAppend('div', repContainer, { id: 'list-container' });
+        const ul = createAndAppend('ul', repContainer, { html: '<strong> Repository information: </strong>' });
         const li1 = createAndAppend('li', ul, { html: 'Repository:' + " " + repData.name });
         const li2 = createAndAppend('li', ul, { html: 'Fork:' + " " + repData.forks_count });
         const li3 = createAndAppend('li', ul, { html: 'Updated:' + " " + repData.updated_at });
