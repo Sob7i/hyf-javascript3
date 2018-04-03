@@ -11,7 +11,7 @@
         select.addEventListener("change", theListener);
 
         data.forEach(repository => {
-            const option = createAndAppend('option', select, { value: repository.name, html: repository.name });
+            const option = createAndAppend('option', select, { html: repository.name });
         });
         const repContainer = createAndAppend('div', root);
         repContainer.id = 'rep-container';
