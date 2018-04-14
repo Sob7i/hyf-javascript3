@@ -1,0 +1,127 @@
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(http://www.hackyourfuture.net/images/headers/main-home.jpg);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+p {
+    color: black;
+    font-size: 30px;
+    margin: 0% 0% 3% 3%;
+    padding: 8px 16px;
+}
+
+#header {
+    width: 60%;
+    height: 60px;
+    margin: 20px 20px 30px 20%;
+    background-color: rgba(255, 255, 255, 0.924);
+}
+
+select {
+    height: 30px;
+    text-align: center;
+    font-size: 60%;
+}
+
+#rep-container {
+    width: 350px;
+    position: relative;
+    color: #080808;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin: 0% 10% 0% 20%;
+    background-color: rgba(255, 255, 255, 0.925);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12);
+}
+
+#listStyle {
+    font-family: cursive;
+}
+
+#cont-container {
+    width: 400px;
+    position: relative;
+    color: #050707;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin: 1% 0% 0px 0%;
+    right: 75px;
+    background-color: rgba(255, 255, 255, 0.924)
+}
+
+.contributorsInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+#contributor-img {
+    border-radius: 15%;
+    width: 80px;
+    height: 80px;
+}
+
+#contribution {
+    text-align: center;
+    background-color: black;
+    border-radius: 15px;
+    width: 10%;
+    color: white;
+    margin-left: 10%;
+}
+
+#login {
+    margin-left: 5%;
+    font-family: cursive;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+#titles {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+@media all and (min-width: 720px) {
+    p {
+        width: 50%;
+    }
+    select {
+        width: 35%;
+    }
+    #rep-container {
+        width: 25%;
+        transition: 0.5s;
+    }
+    #cont-container {
+        width: 30%;
+    }
+    .contributorsInfo {
+        transition: 0.5s;
+    }
+    p:hover {
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    #rep-container:hover {
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    .contributorsInfo:hover {
+        transform: scale(1.1);
+        z-index: 1;
+    }
+}
